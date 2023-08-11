@@ -1,0 +1,277 @@
+/* Fonts used: 
+    Lato for body (and headings): 'Lato'
+    PT Mono for code: 'PT Mono"
+*/
+
+:root {
+    --background-color: white;
+    --text-color: black;
+    --headings: #0086FF;
+    --button-border: #0086FF;
+    --banner-bg: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    --banner-text: white; 
+    --table-header: #f2f2f2;
+}
+
+.dark-mode {
+    --background-color: #181a1b;
+    --text-color: #e8e6e3;
+    --headings: #33a6ff;
+    --button-border: #0086FF;
+    --banner-bg: linear-gradient(to right, #990811, #5d1182, #0e9bba);
+    --banner-text: #e8e6e3;
+    --table-header: #1f2223;
+
+}
+
+
+
+body {
+    font-family: 'Lato', Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Poppins', 'Lato', Verdana, sans-serif;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 50px;
+    color: var(--headings);
+    /* White BG color
+        color: #165699;*/
+}
+h2 {
+    font-family: 'Poppins', 'Lato', Verdana, sans-serif;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+    color: var(--headings);
+    /* White BG color
+        color: #165699;*/
+}
+
+p {
+    line-height: 170%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: large
+}
+form {
+    line-height: 170%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: large
+}
+ul {
+    list-style-type: none;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+/* Buttons and Inputs */
+
+a {
+    color: var(--headings);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.inputButton {
+    margin-left: 0 !important;
+}
+button, .inputButton {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    font-size: large;
+    background-color: var(--background-color);
+    border: 2px solid var(--button-border);
+    border-radius: 5px;
+    color: var(--text-color);
+    padding: 5px 20px 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    padding: 8px 20px;
+}
+button:hover {
+    background-color: #0086FF !important;
+    color: white !important;
+}
+input {
+    margin: 1%;
+    font-size: large;
+    background-color: var(--background-color);
+    border: 2px solid var(--button-border);
+    border-radius: 5px;
+    color: var(--text-color);
+    padding: 5px 20px 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.3s;
+}
+
+.row {
+    display: flex; 
+    flex-wrap: wrap; 
+    margin: 10px 25%; 
+    justify-content: start;
+    flex-direction: row;
+}
+.column {
+   margin-right: 10%;
+}
+.column:hover {
+    cursor: pointer;
+}
+
+
+.banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #12c2e9;  /* fallback for very old browsers */
+    background: var(--banner-bg);
+    padding: 10vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: relative;
+}
+.banner a:hover {
+    text-decoration: none;
+}
+.banner h1 {
+    text-align: center;
+    color: var(--banner-text);
+    font-size: 500%;
+}
+.banner p {
+    text-align: center;
+    font-size: xx-large;
+    color: var(--banner-text);
+}
+
+.switcher {
+    color: var(--banner-text);
+    position: absolute; 
+    font-size: 200%;
+    bottom: 10px;
+    right: 25%;
+    cursor: pointer;
+
+}
+
+/* Library */
+
+#updateForm {
+    position: sticky; 
+    top: 0;
+    background-color: var(--background-color);
+    border: 1px solid var(--background-color);
+    border-radius: 5px;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--table-header);
+}
+td a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+#ratingHeader:hover, #teamHeader:hover {
+    cursor: pointer;
+}
+
+#tagSearch, #teamSearch {
+   margin-left: 5%;
+}
+#newRowButton, #updateForm {
+    margin-left: 5%;
+    margin-top: 20px;
+}
+#updateForm {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+form input[type="submit"] {
+    cursor: pointer;
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 10px 20px;
+    margin-left: 1%;
+    line-height: normal;
+}
+form input[type="submit"]:hover {
+    background-color: #0086FF !important;
+    color: white !important;
+}
+.updateChapterButton button, .editRowButton button {
+    margin: 0;
+}
+
+
+/* Notes */
+.ql-toolbar.ql-snow {
+    position: sticky;
+    top: 0;
+    background-color: var(--table-header);
+    z-index: 99;
+    display: block;
+  }
+  .ql-toolbar.ql-snow .ql-formats  svg .ql-stroke {
+    stroke: var(--text-color);
+}
+.ql-toolbar.ql-snow .ql-picker-label {
+    color: var(--text-color);
+}
+.ql-snow.ql-toolbar button, .ql-snow .ql-toolbar button {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    margin: 2px;
+    margin-right: 5px;
+    text-align: start;
+  
+}
+
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+    margin: 30px;
+}
+
+
+/* add_comic.php */
+.tags-row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 10px;
+}
+.tags-row button{
+    margin: 5px;
+}

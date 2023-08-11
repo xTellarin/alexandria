@@ -1,0 +1,145 @@
+/* Phones */
+@media (max-width: 480px) {
+    h1 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    button {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    ul{
+        margin-left: 10%;
+        margin-right: 10%;
+        list-style-type: none;
+    }
+    
+    .banner {
+        padding: 50px !important;
+        position: relative;
+    }
+    .banner h1 {
+        font-size: 30px
+    }
+    .banner p {
+        font-size: 15px
+    }
+
+    .row {
+        flex-direction: column;
+        margin: 0;
+    }
+    .column {
+        flex: 100%;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    .switcher {
+        font-size: 150%;
+        right: 15px;
+    
+    }
+    form input {
+        margin-bottom: 10px;
+    }
+    form input[type="submit"] {
+        margin-top: 10px;
+        margin-left: 0px;
+        padding: 10px 20px;
+        font-size: 110%;
+    }
+    #addForm, #editForm {
+        margin-left: 15%;
+    }
+    
+    /* Remove the Team, Rating and Tags on mobile */
+    #teamHeader, #ratingHeader, #tagsHeader, .comic-team, .comic-rating, .comic-tags {
+        display: none;
+    }
+
+    /* Notes */
+    .ql-snow.ql-toolbar button, .ql-snow .ql-toolbar button {
+        margin-right: 0;
+        margin: 0;
+    }
+
+    .tags-row {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 10px;
+        flex-direction: column;
+    }
+    .tags-row button{
+        margin: 5px;
+    }
+}
+
+
+/* Portrait tablets  (max width = 768px) */
+@media (max-width: 900px) {
+    h1, h2, form {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    p {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    button {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+
+    .banner {
+        padding: 50px !important;
+    }
+
+    .tags-row {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 10px;
+        flex-direction: column;
+    }
+}
+
+/* Up to 13' laptops */
+@media only screen and (max-width: 1280px) {
+    h1, h2, form {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    p {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    #code {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    img {
+        max-width: 60%;
+        max-height: auto;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    button {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .banner {
+        padding: 100px;
+    }
+}
