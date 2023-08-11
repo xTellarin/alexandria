@@ -68,7 +68,7 @@ function logout() {
     </div>
     <div style="height: 20px"></div>
 
-    <p>A question or suggestion? Feel free to submit a pull request or file an issue on the <a href="">GitHub repo</a>. <br>
+    <p>A question or suggestion? Feel free to submit a pull request or file an issue on the <a href="">GitHub repo</a>. Please use the discussions tab for everything else!<br>
     You can also shoot me an <a href=""mailto:hello@tellarin.dev>email</a> or message me on Discord: Tellarin#0069.</p>
     <p style="">If you need to, you can also <a href="system/logout.php">logout</a>.</p>
 
