@@ -1,11 +1,15 @@
 # Quick Start Guide
 A Library to store bookmarks for comics, webnovels and animes.
+You can access the demo or use it permanently [here](https://public.tellarin.dev).
 
+![PHP requirements badge](https://img.shields.io/badge/php-7%20%7C%208%20%7C%208.1-purple)
+![Hosting Badge](https://img.shields.io/badge/Hosting-Public%20%7C%20Self%20Hosted%20%7C%20Docker-blue)
+![Development Status Badge](https://img.shields.io/badge/Development%20Status-Active-green)
 
 Welcome to Alexandria. 
-The Library has been developed first and foremost for Linux systems, on a remote (VPS) or local (NAS with VM) server. While you *can* use it directly on your machine, keep in mind you'll have to start the apache web server every time you want to access the Library. 
+The Library has been developed first and foremost for Linux systems, on a remote (VPS) or local (NAS with VM) server. While you *can* use it directly on your machine, keep in mind you'll have to start the apache web server every time you want to access the Library. If you don't have access to a server (VPS or NAS VM), I'm working on a Docker image for use on your computer (or a NAS). 
 
-The Library is designed to be self-hosted, preferably on a subdomain (especially if you don't want to modify the code at all). You can of course change the location to wherever you want, but you will need to adjust the path to your `secure` directory accordingly.
+The Library is designed to be self-hosted, preferably on a subdomain (especially if you don't want to modify the code at all). You can of course change the location to wherever you want, but you will need to adjust the path to your `secure` directory accordingly. If you want to see what it looks like in action, you can access the demo at the link above.
 
 # Installation
 
@@ -17,7 +21,7 @@ On Ubuntu and Debian derivatives, make sure you have everything by running:
 sudo apt install apache2 php8.1 php-mysql mysql-server
 ```
 > NOTE:
-> I am installing php 8,1 here. If you need a different version of php elsewhere, leave that out but make sure you still have php>7.
+> I am installing php 8.1 here. If you need a different version of php elsewhere, leave that out but make sure you still have php>7.
 
 The basic installation process is as follows: 
 - Create your `secure` directory
@@ -41,6 +45,7 @@ Create a new file called `config.php` using the text editor of your choice (I re
 
 Change the \[username] and \[password] to whatever you want. Make sure not to use `root` for security reasons.
 Save your file and exit, you're done here. 
+
 \[Optional] You might want to assign the correct file permissions for security too: `sudo chmod 644 config.php` 
 
 ## Clone Alexandria
@@ -103,6 +108,7 @@ Before we move on to using Alexandria, here's an FAQ:
 
 ### FAQ
 **Q: I have an error 500 when I try to reach the login page (autoredirect)**
+
 A: You might want to check your php logs first. On Ubuntu and Debian derivatives you can find the log file in `/var/log/apache2/error.log'` Running 
 ```bash
 sudo tail /var/log/apache2/error.log
@@ -126,21 +132,24 @@ Fill in the fields with the details of the comic / novel / anime you'd like to s
 Congratulation! Your first entry now populates your library. Notice how the 'Last Read On' field is automatically filled with today's date. It's convenient to see how much time has passed since you last read / watched your bookmark. 
 In a few weeks, once you've caught up again, you'll probably want to update the chapter at which you stopped at. While you can do so by clicking the *Edit* button in the 'Edit info' column, a much quicker way to do it is by inputting the chapter number next to *Last Chapter read* at the top. Then, click *Update* on the record you'd like to update. That's it!
 
-Finally, remember that you can also filter by tag and team using the dedicated fields at the top. As you library fills up with all sorts of bookmarks, you'll appreciate this change. 
+Finally, remember that you can also filter by tag and team using the dedicated fields at the top. As your library fills up with all sorts of bookmarks, you'll appreciate this feature. 
 
 # Other notes / FAQ
 
 You are now ready to use Alexandria. If you want to dive deeper on customization, I've got more (illustrated) documentation for you [on my blog](https://blog.tellarin.dev).
 
 **Q: I don't have access to a server, how can I use Alexandria?**
+
 A: You can use the [demo](public.tellarin.dev) available on my website. I say demo, but you definitely can use it for as long as you'd like. Just be aware that support can be limited. 
 I'm also working on a Docker container so that you can host it on your machine directly. 
 
+
 **Q: I've got other questions, how can I reach you?**
+
 A: You can send me a message on Discord (Tellarin#0069) or [send me an email](mailto:hello@tellarin.dev). You can also use the Discussions tab at the top of this page. That's what it's made for :)
 
 Feel free to submit Pull Requests if there's something you'd like to improve, an Issue if something is wrong (read the Installation paragraph thoroughly first) or create a new Discussion for other things you'd like to share. 
 
 Thank you for using Alexandria!
 
-	\- Tellarin
+\- Tellarin
