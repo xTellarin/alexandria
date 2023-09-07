@@ -1,13 +1,14 @@
 # Quick Start Guide
 A Library to store bookmarks for comics, webnovels and animes.
 You can access the demo or use it permanently [here](https://public.tellarin.dev).
+The Docker version is available [here](https://github.com/xTellarin/alexandria-docker).
 
 ![PHP requirements badge](https://img.shields.io/badge/php-7%20%7C%208%20%7C%208.1-purple)
 ![Hosting Badge](https://img.shields.io/badge/Hosting-Public%20%7C%20Self%20Hosted%20%7C%20Docker-blue)
 ![Development Status Badge](https://img.shields.io/badge/Development%20Status-Active-green)
 
 Welcome to Alexandria. 
-The Library has been developed first and foremost for Linux systems, on a remote (VPS) or local (NAS with VM) server. While you *can* use it directly on your machine, keep in mind you'll have to start the apache web server every time you want to access the Library. If you don't have access to a server (VPS or NAS VM), I'm working on a Docker image for use on your computer (or a NAS). 
+The Library has been developed first and foremost for Linux systems, on a remote (VPS) or local (NAS with VM) server. While you *can* use it directly on your machine, keep in mind you'll have to start the apache web server every time you want to access the Library. If you don't have access to a server (VPS or NAS VM), I'm maintaining [a Docker version](https://github.com/xTellarin/alexandria-docker) for use on your computer (or a NAS). 
 
 The Library is designed to be self-hosted, preferably on a subdomain (especially if you don't want to modify the code at all). You can of course change the location to wherever you want, but you will need to adjust the path to your `secure` directory accordingly. If you want to see what it looks like in action, you can access the demo at the link above.
 
@@ -136,19 +137,19 @@ Finally, remember that you can also filter by tag and team using the dedicated f
 
 # Other notes / FAQ
 
-You are now ready to use Alexandria. If you want to dive deeper on customization, I've got more (illustrated) documentation for you [on my blog](https://blog.tellarin.dev).
+You are now ready to use Alexandria. If you want to dive deeper on customization, I've got more (illustrated) documentation for you [on my blog](https://blog.tellarin.dev/alexandria).
 
 **Q: I don't have access to a server, how can I use Alexandria?**
 
 A: You can use the [demo](public.tellarin.dev) available on my website. I say demo, but you definitely can use it for as long as you'd like. Just be aware that support can be limited. 
-I'm also working on a Docker container so that you can host it on your machine directly. 
+I'm also mainting [a Docker container](https://github.com/xTellarin/alexandria-docker) so that you can host it on your machine directly. 
 
 
 **Q: I've got other questions, how can I reach you?**
 
 A: You can send me a message on Discord (Tellarin#0069) or [send me an email](mailto:hello@tellarin.dev). You can also use the Discussions tab at the top of this page. That's what it's made for :)
 
-Feel free to submit Pull Requests if there's something you'd like to improve, an Issue if something is wrong (read the Installation paragraph thoroughly first) or create a new Discussion for other things you'd like to share. 
+Feel free to submit Pull Requests if there's something you'd like to improve, an Issue if something is wrong (read the Installation paragraph thoroughly first) or create a new Discussion (at the top of this page) for other things you'd like to share. 
 
 Thank you for using Alexandria!
 
