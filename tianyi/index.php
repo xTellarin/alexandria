@@ -21,7 +21,7 @@ $username = $_SESSION['username'];
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato&family=PT+Mono&family=Poppins&display=swap" rel="stylesheet">
 
-<title>Alexandria</title>
+<title>Tianyi</title>
 <meta name="description" content="Welcome to your library.">
 <meta name="author" content="Tellarin">
 <link rel="icon" href="../resources/favicon.ico" type="image/x-icon" />

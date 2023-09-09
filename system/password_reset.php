@@ -68,8 +68,8 @@ $conn->close();
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato&family=PT+Mono&family=Poppins&display=swap" rel="stylesheet">
 
-<title>Reset Password - Alexandria</title>
-<meta name="description" content="Password Reset - Alexandria">
+<title>Reset Password - Tianyi</title>
+<meta name="description" content="Password Reset - Tianyi">
 <meta name="author" content="Tellarin">
 <link rel="icon" href="../resources/favicon.ico" type="image/x-icon" />
 
@@ -81,7 +81,7 @@ $conn->close();
 
 
 <div class="banner"><a href="../login.php">
-<h1 style="margin: 0;">Alexandria</h1></a>
+<h1 style="margin: 0;">Tianyi</h1></a>
 <p style="margin: 0;">By Tellarin</p>
 <i class="fa-solid fa-moon switcher" onclick="toggleTheme()"></i>
 </div>

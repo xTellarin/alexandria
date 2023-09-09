@@ -70,8 +70,8 @@ $db->close();
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato&family=PT+Mono&family=Poppins&display=swap" rel="stylesheet">
 
-<title>Login - Alexandria</title>
-<meta name="description" content="Login - Alexandria">
+<title>Login - Tianyi</title>
+<meta name="description" content="Login - Tianyi">
 <meta name="author" content="Tellarin">
 <link rel="icon" href="resources/favicon.ico" type="image/x-icon" />
 
@@ -83,7 +83,7 @@ $db->close();
 
 
 <div class="banner">
-<h1 style="margin: 0;">Alexandria</h1>
+<h1 style="margin: 0;">Tianyi</h1>
 <p style="margin: 0;">By Tellarin</p>
 <i class="fa-solid fa-moon switcher" onclick="toggleTheme()"></i>
 </div>

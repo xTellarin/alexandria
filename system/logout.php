@@ -31,7 +31,7 @@ $userId = $_SESSION['user_id'];
 <body>
 
 <div class="banner">
-<h1 style="margin: 0;">Alexandria</h1>
+<h1 style="margin: 0;">Tianyi</h1>
 <p style="margin: 0;">By Tellarin</p>
 <i class="fa-solid fa-moon switcher" onclick="toggleTheme()"></i>
 </div>

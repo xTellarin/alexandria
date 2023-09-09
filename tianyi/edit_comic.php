@@ -74,7 +74,7 @@ $conn = new mysqli($host, $dbuser, $dbpassword, $database);
 <link rel="stylesheet" type="text/css" href="../responsive.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato&family=PT+Mono&family=Poppins&display=swap" rel="stylesheet">
-<title>Edit Record - Alexandria</title>
+<title>Edit Record - Tianyi</title>
 <meta name="description" content="Edit Comic">
 <meta name="author" content="TheGeekA69">
 <link rel="icon" href="../resources/favicon.ico" type="image/x-icon" />
@@ -85,7 +85,7 @@ $conn = new mysqli($host, $dbuser, $dbpassword, $database);
 
 <body>
 <div class="banner">
-<h1 style="margin: 0;">Alexandria</h1>
+<h1 style="margin: 0;">Tianyi</h1>
 <p style="margin: 0;"></p>
 <i class="fa-solid fa-moon switcher" onclick="toggleTheme()"></i>
 </div>

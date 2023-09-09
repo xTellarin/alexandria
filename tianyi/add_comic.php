@@ -82,7 +82,7 @@ if ($stmt === false) {
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato&family=PT+Mono&family=Poppins&display=swap" rel="stylesheet">
 
-<title>Add Record - Alexandria</title>
+<title>Add Record - Tianyi</title>
 <meta name="description" content="Add a record to your library.">
 <meta name="author" content="Tellarin">
 <link rel="icon" href="../resources/favicon.ico" type="image/x-icon" />
@@ -158,7 +158,7 @@ if ($stmt === false) {
 </div>
 </div>
 
-<p>Have a tag you want me to add? Send me an <a href='mailto:hello@tellarin.dev'>email</a>.</p>
+<p>Have a tag you want me to add? Open a Pull Request on Github or create an Issue.</p>
 
 <style>
 .autofill-button{
