@@ -1,16 +1,39 @@
+// Search by title
+document.addEventListener('DOMContentLoaded', function() {
+    var titleSearch = document.getElementById('titleSearch');
+    var titleTags = document.getElementsByClassName('comic-title'); // ensure your <td> or <tr> for title has this class
+    
+    titleSearch.addEventListener('input', function() {
+        var searchQuery = titleSearch.value.toLowerCase();
+        
+        for (var i = 0; i < titleTags.length; i++) {
+            var titleTag = titleTags[i];
+            var tagText = titleTag.textContent.toLowerCase();
+            
+            if (tagText.includes(searchQuery)) {
+                titleTag.parentNode.style.display = 'table-row';
+            } else {
+                titleTag.parentNode.style.display = 'none';
+            }
+        }
+    });
+});
+
 // Search by tag
 document.addEventListener('DOMContentLoaded', function() {
     var tagSearch = document.getElementById('tagSearch');
     var comicTags = document.getElementsByClassName('comic-tags');
     
     tagSearch.addEventListener('input', function() {
-        var searchQuery = tagSearch.value.toLowerCase();
+        // Replace spaces with commas and split by comma
+        var searchQueries = tagSearch.value.toLowerCase().replace(/\s+/g, ',').split(','); 
         
         for (var i = 0; i < comicTags.length; i++) {
             var comicTag = comicTags[i];
             var tagText = comicTag.textContent.toLowerCase();
+            var tagFound = searchQueries.every(function(val){return tagText.includes(val)});
             
-            if (tagText.includes(searchQuery)) {
+            if (tagFound){
                 comicTag.parentNode.style.display = 'table-row';
             } else {
                 comicTag.parentNode.style.display = 'none';
@@ -18,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
 
 
 // Search by team

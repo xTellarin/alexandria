@@ -39,8 +39,11 @@ $username = $_SESSION['username'];
 
 <div style="height: 30px"></div>
 
+<div style="margin-left: 5%;">
+<input type="text" id="titleSearch" placeholder="Search by title…">
 <input type="text" id="tagSearch" placeholder="Search by tag...">
 <input type="text" id="teamSearch" placeholder="Search by team...">
+</div>
 
 <form id="updateForm" method="post" action="updateChapter.php">
 <input type="hidden" id="rowId" name="id" value="">
@@ -87,7 +90,7 @@ $result = $stmt->get_result();
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         echo "<tr data-title='" . $row["title"] . "'>";
-        echo "<td><a href='" . $row["link"] . "' target='_blank'>" . $row["title"] . "</a></td>";
+        echo "<td class='comic-title'><a href='" . $row["link"] . "' target='_blank'>" . $row["title"] . "</a></td>";
         echo "<td>" . $row["chapters"] . "</td>";
         echo "<td class='comic-team'>" . $row["team"] . "</td>";
         echo "<td class='comic-rating'>" . $row["rating"] . "</td>";

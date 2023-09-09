@@ -21,8 +21,6 @@ if (isset($_POST['submit'])) {
     
     $sql = "UPDATE records SET rating = '$comicRating', tags = '$comicTags', chapters = '$comicChapter', link = '$comicLink', team = '$comicTeam', lastRead = '$currentDate' WHERE title = '$comicTitle'";
     if ($conn->query($sql) === TRUE) {
-        echo "Record updated successfully.";
-        sleep(5);
         header("Location: index.php"); // Redirect to main page after updating
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

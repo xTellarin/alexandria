@@ -1,6 +1,7 @@
 # Quick Start Guide
 A Library to store bookmarks for comics, webnovels and animes.
 You can access the demo or use it permanently [here](https://public.tellarin.dev).
+The Docker version is available [here](https://github.com/xTellarin/alexandria-docker).
 
 ![PHP requirements badge](https://img.shields.io/badge/php-7%20%7C%208%20%7C%208.1-purple)
 ![Hosting Badge](https://img.shields.io/badge/Hosting-Public%20%7C%20Self%20Hosted%20%7C%20Docker-blue)
@@ -12,7 +13,7 @@ You can access the demo or use it permanently [here](https://public.tellarin.dev
 
 
 Welcome to Tianyi. 
-The Library has been developed first and foremost for Linux systems, on a remote (VPS) or local (NAS with VM) server. While you *can* use it directly on your machine, keep in mind you'll have to start the apache web server every time you want to access the Library. If you don't have access to a server (VPS or NAS VM), I'm working on a Docker image for use on your computer (or a NAS). 
+The Library has been developed first and foremost for Linux systems, on a remote (VPS) or local (NAS with VM) server. While you *can* use it directly on your machine, keep in mind you'll have to start the apache web server every time you want to access the Library. If you don't have access to a server (VPS or NAS VM), I'm maintaining a [Docker image](https://github.com/xTellarin/tianyi-docker) for use on your computer (or a NAS). 
 
 The Library is designed to be self-hosted, preferably on a subdomain (especially if you don't want to modify the code at all). You can of course change the location to wherever you want, but you will need to adjust the path to your `secure` directory accordingly. If you want to see what it looks like in action, you can access the demo at the link above.
 
@@ -153,7 +154,7 @@ I also created a [Docker container](https://github.com/xTellarin/tianyi-docker) 
 
 A: You can send me a message on Discord (Tellarin#0069) or [send me an email](mailto:hello@tellarin.dev). You can also use the Discussions tab at the top of this page. That's what it's made for :)
 
-Feel free to submit Pull Requests if there's something you'd like to improve, an Issue if something is wrong (read the Installation paragraph thoroughly first) or create a new Discussion for other things you'd like to share. 
+Feel free to submit Pull Requests if there's something you'd like to improve, an Issue if something is wrong (read the Installation paragraph thoroughly first) or create a new Discussion (at the top of this page) for other things you'd like to share. 
 
 Thank you for using Tianyi!
 

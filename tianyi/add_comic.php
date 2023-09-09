@@ -55,8 +55,6 @@ if ($stmt === false) {
 
     // Execute the statement
     if ($stmt->execute() === TRUE) {
-        echo "Record added successfully.";
-        sleep(5);
         header("Location: ./");
     } else {
         echo "Error: " . $stmt->error;
